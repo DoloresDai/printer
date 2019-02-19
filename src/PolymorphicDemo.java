@@ -8,7 +8,8 @@ public class PolymorphicDemo {
         print(new ColourPrinter());
         print(new BlackAndWhitePrinter());
     }
-    public static void print(Printer printer){
+
+    public static void print(Printer printer) {
         printer.print();
     }
 }
