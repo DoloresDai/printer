@@ -4,8 +4,11 @@ import main.java.company.model.Printer;
 
 public class PolymorphicDemo {
     public static void main(String[] args) {
-        (new Printer()).print();
-        (new ColourPrinter()).print();
-        (new BlackAndWhitePrinter()).print();
+        print(new Printer());
+        print(new ColourPrinter());
+        print(new BlackAndWhitePrinter());
+    }
+    public static void print(Printer printer){
+        printer.print();
     }
 }
